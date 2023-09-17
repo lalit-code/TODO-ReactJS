@@ -97,7 +97,7 @@ function App() {
 
                 </div>
 
-                <Github link="https://github.com/lalit-code/Youtube-Thumbnail-Downloader" />
+                <Github link="https://github.com/lalit-code/TODO-ReactJS" />
 
             </div>
         </>
