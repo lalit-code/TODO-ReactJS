@@ -1,0 +1,27 @@
+
+
+
+.github{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
+ 
+/* Media Query for Mobile view */
+
+
+ @media only screen and (max-width: 450px) {
+
+    .github{
+        display: none;
+     }
+  }

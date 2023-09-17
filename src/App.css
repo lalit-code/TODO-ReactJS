@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+.todo{
+  background-color: rgb(249, 240, 229);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-box-head > .heading{
+  background-color: burlywood;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.todo-box{
+  overflow: hidden;
+  background-color: white;
+  height: 70vh;
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgb(79, 79, 91);
+  position: relative;
+}
+
+.todo-box > .todo-box-head{
+height: 130px;
+
+}
+
+.todo-box > .todo-box-head > .head-fun{
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.head-fun > .head-fun-body{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.head-fun > .head-fun-body>  .search{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-fun > .head-fun-body>  .search input{
+     padding: 10px;
+     border: none;
+     outline: none;
+     border-bottom: 3px solid  rgb(194, 170, 170);
+     font-size: 17px;
+     color: rgb(93, 80, 80);
+  }
+
+  .head-fun > .head-fun-body>  .search input:focus{
+    border-bottom: 3px solid  rgb(154, 128, 128);
+ }
+
+
+.head-fun > .head-fun-body> .add{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40%;
+}
+
+.head-fun > .head-fun-body> .add > .addbtn{
+  padding: 10px;
+  border-radius: 50px;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px 10px rgb(102, 117, 107);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.head-fun > .head-fun-body> .add > .addbtn{
+  background-color: rgb(37, 225, 119);
+  box-shadow: 2px 2px 5px rgb(102, 117, 107);
+}
+
+.head-fun > .head-fun-body> .add > .addbtn:hover{
+  box-shadow: 3px 3px 7px rgb(102, 117, 107);
+}
+
+.todo-box > .todo-box-body{
+  height: 85%;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  overflow: auto;
+  color: black;
+}
+
+/* CSS for Task list  */
+
+.taskdiv{
+  display: flex;
+  margin-top: 15px;
+  background-color:rgb(245, 225, 200);
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.taskdiv li{
+  list-style: none;
+  padding-left: 20px;
+  font-weight: bold;
+  text-wrap: wrap;
+}
+
+.taskdiv p img:hover{
+  cursor: pointer;
+}
+
+
+.no-task{
+  color: rgb(142, 119, 92);
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* Media Query for Mobile view */
+
+
+@media only screen and (max-width: 450px) {
+
+  .github{
+      display: none;
+   }
+
+   .todo-box{
+
+    height: 60vh;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgb(143, 143, 193);
+    position: relative;
+  }
+
+  .head-fun > .head-fun-body>  .search input{
+   width: 100%;
+ }
+
+}
